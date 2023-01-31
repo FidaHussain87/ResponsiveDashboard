@@ -4,7 +4,13 @@ import { GoPrimitiveDot } from 'react-icons/go'
 import { IoIosMore } from 'react-icons/io'
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns'
 
-import { StackedChart, PieChart, Button, LineChart, SparkLine } from '../components'
+import {
+  StackedChart,
+  PieChart,
+  Button,
+  LineChart,
+  SparkLine,
+} from '../components'
 import {
   earningData,
   medicalproBranding,
@@ -38,7 +44,7 @@ const Ecommerce = () => {
     <div className="mt-24">
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
         <div
-          className=" dark:text-gray-200 dark:bg-secondary-dark-bg 
+          className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg 
         h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3  
         bg-no-repeat bg-cover bg-center"
         >
@@ -146,7 +152,11 @@ const Ecommerce = () => {
               </div>
             </div>
             <div>
-              <StackedChart currentMode={currentMode} width="320px" height="360px" />
+              <StackedChart
+                currentMode={currentMode}
+                width="320px"
+                height="360px"
+              />
             </div>
           </div>
         </div>
