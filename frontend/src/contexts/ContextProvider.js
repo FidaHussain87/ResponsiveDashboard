@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 const StateContext = createContext();
 const initialState = {
   chat: false,
@@ -11,9 +11,35 @@ export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(true);
   const [isClicked, setIsClicked] = useState(initialState);
   const [screenSize, setScreenSize] = useState(undefined);
+  const [currentColor, setCurrentColor] = useState("#03C9D7");
+  const [currentMode, setCurrentMode] = useState("Light");
+  const [themeSettings, setThemeSettings] = useState(false);
+  const [subMenuCancel, setSubMenuCancel] = useState(false);
+
+  const setMode = (e) => {
+    setCurrentMode(e.target.value);
+    localStorage.setItem("themeMode", e.target.value);
+    setThemeSettings(false);
+  };
+
+  const setColor = (color) => {
+    setCurrentColor(color);
+    localStorage.setItem("colorMode", color);
+    setThemeSettings(false);
+  };
+
   const handleClick = (clicked) => {
+    setSubMenuCancel(true);
     setIsClicked({ ...initialState, [clicked]: true });
   };
+  useEffect(() => {
+    const color = window.localStorage.getItem("colorMode");
+    const mode = window.localStorage.getItem("themeMode");
+    if (color !== null && mode !== null) {
+      setCurrentColor(color);
+      setCurrentMode(mode);
+    }
+  }, []);
   return (
     <StateContext.Provider
       value={{
@@ -24,6 +50,14 @@ export const ContextProvider = ({ children }) => {
         handleClick,
         screenSize,
         setScreenSize,
+        currentColor,
+        currentMode,
+        themeSettings,
+        setThemeSettings,
+        setMode,
+        setColor,
+        setSubMenuCancel,
+        subMenuCancel,
       }}
     >
       {children}

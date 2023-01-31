@@ -826,18 +826,6 @@ export const medicalproBranding = {
   ],
   leaders: [
     {
-      image: avatar2,
-    },
-    {
-      image: avatar3,
-    },
-    {
-      image: avatar2,
-    },
-    {
-      image: avatar4,
-    },
-    {
       image: avatar,
     },
   ],
@@ -987,8 +975,8 @@ export const customersData = [
   {
     CustomerID: 1004,
 
-    CustomerName: "Christopher Jamil",
-    CustomerEmail: "jamil@gmail.com",
+    CustomerName: "Fida Hussain",
+    CustomerEmail: "fidahussain.sw31@gmail.com",
     ProjectName: "MedicalPro WP Theme",
     Status: "Completed",
     CustomerImage: avatar,
@@ -1052,8 +1040,8 @@ export const customersData = [
   {
     CustomerID: 1009,
 
-    CustomerName: "Christopher Jamil",
-    CustomerEmail: "jamil@gmail.com",
+    CustomerName: "Fida Hussain",
+    CustomerEmail: "fidahussain.sw31@gmail.com",
     ProjectName: "MedicalPro WP Theme",
     Status: "Completed",
     CustomerImage: avatar,
@@ -1117,8 +1105,8 @@ export const customersData = [
   {
     CustomerID: 1014,
 
-    CustomerName: "Christopher Jamil",
-    CustomerEmail: "jamil@gmail.com",
+    CustomerName: "Fida Hussain",
+    CustomerEmail: "fidahussain.sw31@gmail.com",
     ProjectName: "MedicalPro WP Theme",
     Status: "Completed",
     CustomerImage: avatar,
@@ -1182,8 +1170,8 @@ export const customersData = [
   {
     CustomerID: 1019,
 
-    CustomerName: "Christopher Jamil",
-    CustomerEmail: "jamil@gmail.com",
+    CustomerName: "Fida Hussain",
+    CustomerEmail: "fidahussain.sw31@gmail.com",
     ProjectName: "MedicalPro WP Theme",
     Status: "Completed",
     CustomerImage: avatar,
@@ -1247,8 +1235,8 @@ export const customersData = [
   {
     CustomerID: 1024,
 
-    CustomerName: "Christopher Jamil",
-    CustomerEmail: "jamil@gmail.com",
+    CustomerName: "Fida Hussain",
+    CustomerEmail: "fidahussain.sw31@gmail.com",
     ProjectName: "MedicalPro WP Theme",
     Status: "Completed",
     CustomerImage: avatar,
@@ -1312,8 +1300,8 @@ export const customersData = [
   {
     CustomerID: 1029,
 
-    CustomerName: "Christopher Jamil",
-    CustomerEmail: "jamil@gmail.com",
+    CustomerName: "Fida Hussain",
+    CustomerEmail: "fidahussain.sw31@gmail.com",
     ProjectName: "MedicalPro WP Theme",
     Status: "Completed",
     CustomerImage: avatar,
@@ -1377,8 +1365,8 @@ export const customersData = [
   {
     CustomerID: 1034,
 
-    CustomerName: "Christopher Jamil",
-    CustomerEmail: "jamil@gmail.com",
+    CustomerName: "Fida Hussain",
+    CustomerEmail: "fidahussain.sw31@gmail.com",
     ProjectName: "MedicalPro WP Theme",
     Status: "Completed",
     CustomerImage: avatar,
@@ -1441,8 +1429,8 @@ export const customersData = [
   },
   {
     CustomerID: 1039,
-    CustomerName: "Christopher Jamil",
-    CustomerEmail: "jamil@gmail.com",
+    CustomerName: "Fida Hussain",
+    CustomerEmail: "fidahussain.sw31@gmail.com",
     ProjectName: "MedicalPro WP Theme",
     Status: "Completed",
     CustomerImage: avatar,
@@ -1504,8 +1492,8 @@ export const employeesData = [
   },
   {
     EmployeeID: 5,
-    Name: "Omar Darobe",
-    Title: "HR",
+    Name: "Fida Hussain",
+    Title: "MERN Stack Developer",
     HireDate: "01/02/2021",
     Country: "USA",
     ReportsTo: "Carson",
@@ -1570,7 +1558,7 @@ export const employeesData = [
     Name: "Omar Darobe",
     Title: "HR",
     HireDate: "01/02/2021",
-    Country: "USA",
+    Country: "Germany",
     ReportsTo: "Carson",
     EmployeeImage: avatar,
   },
