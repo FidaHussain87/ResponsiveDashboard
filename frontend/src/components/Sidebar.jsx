@@ -48,7 +48,7 @@ const Sidebar = () => {
                   text-slate-900"
             >
               <SiShopware className="text-3xl" />
-              <span>Shoppy</span>
+              <span>Team Decoder</span>
             </Link>
             <TooltipComponent content="menu" position="BottomCenter">
               <button
