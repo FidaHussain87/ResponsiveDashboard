@@ -22,4 +22,5 @@ jobs:
       - name: Copy Build Files to Ubuntu Server
         run: |
           ls
-          sudo scp -r -i ~/.ssh/id_rsa . fida@34.125.176.5:/var/www/34.125.176.5
+          cd frontend
+          sudo scp -r -i ~/.ssh/id_rsa build/* fida@34.125.176.5:/var/www/34.125.176.5
