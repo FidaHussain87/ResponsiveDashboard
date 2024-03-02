@@ -24,4 +24,4 @@ jobs:
           ls
           pwd
           cd frontend
-          sudo scp -r -i ~/.ssh/id_rsa build/* fida@34.125.176.5:/var/www/34.125.176.5
+          scp -r -i ~/.ssh/id_rsa build/* fida@34.125.176.5:/var/www/34.125.176.5
