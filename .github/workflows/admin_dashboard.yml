@@ -1,0 +1,23 @@
+name: Deploy React App
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Copy Build Files to Ubuntu Server
+        run: |
+          scp -r -i ~/.ssh/id_rsa . fida@34.125.176.5:/var/www/34.125.176.5
