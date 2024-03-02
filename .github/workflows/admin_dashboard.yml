@@ -19,7 +19,7 @@ jobs:
           npm install
           npm run build
 
-      - name: Copy Build Files to Ubuntu Server
-        run: |
-          ls
-          scp -r -i ~/.ssh/id_rsa . fida@34.125.176.5:/var/www/34.125.176.5
+      # - name: Copy Build Files to Ubuntu Server
+      #   run: |
+      #     ls
+      #     scp -r -i ~/.ssh/id_rsa . fida@34.125.176.5:/var/www/34.125.176.5
